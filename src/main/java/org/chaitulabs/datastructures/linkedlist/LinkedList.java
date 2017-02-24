@@ -99,7 +99,7 @@ public class LinkedList {
 	
 	public void display(){
 		Node node=head;
-		System.out.println("Size= "+this.getSize());
+		//System.out.println("Size= "+this.getSize());
 		System.out.println("****************");
 		while(node!=null){
 			System.out.print(node.data+"\t");
