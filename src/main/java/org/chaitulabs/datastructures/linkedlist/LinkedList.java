@@ -97,6 +97,23 @@ public class LinkedList {
 		size--;
 	}
 	
+	/**
+	 * Reverse the linked list using iterative approach
+	 */
+	public void reverse(){
+		Node previous=null;
+		Node current=head;
+		Node next=null;
+		while (current!=null){
+			next=current.link;
+			current.link=previous;
+			previous=current;
+			current=next;
+		}
+		tail=head;
+		head=previous;
+	}
+	
 	public void display(){
 		Node node=head;
 		//System.out.println("Size= "+this.getSize());

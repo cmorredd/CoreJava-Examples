@@ -30,6 +30,7 @@ public class SinglyLinkedList {
 			System.out.println("4. delete at position");
 			System.out.println("5. check empty");
 			System.out.println("6. get size");
+			System.out.println("7. reverse the list");
 			System.out.println("");
 			int choice = scan.nextInt();
 			switch (choice) {
@@ -64,6 +65,9 @@ public class SinglyLinkedList {
 				break;
 			case 6:
 				System.out.println("Size = " + list.getSize() + " \n");
+				break;
+			case 7:
+				list.reverse();
 				break;
 			default:
 				System.out.println("Wrong Entry \n ");
